@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter"></listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="jetbrains://idea/navigate/reference?project=salesforceAutomation&amp;path=SalesforceAutomation">
+        <classes>
+            <class name="regression.uitest.TestScenarioOneRunner">
+                <methods>
+                    <include name="login"/>
+                    <include name="navigateToSetUpPage"/>
+                    <include name="navigateToObjectManagerPage"/>
+                    <include name="navigateToAccountPage"/>
+                    <include name="navigateToNewCustomFieldPage"/>
+                    <include name="addNewField"/>
+                </methods>
+            </class>
+
+            <class name="regression.uitest.TestScenarioTwoRunner">
+                <methods>
+                    <include name="login"/>
+                    <include name="navigateToUserProfilePage"/>
+                    <include name="navigateToAccountsTab"/>
+                    <include name="createNewAccount"/>
+                    <include name="navigateToContactsTab"/>
+                    <include name="createNewContact"/>
+                </methods>
+            </class>
+
+            <class name="regression.uitest.TestScenarioThreeRunner">
+                <methods>
+                    <include name="changeAccountOwner"/>
+                </methods>
+            </class>
+
+            <class name="regression.uitest.TestScenarioFourRunner">
+                <methods>
+                    <include name="uploadFileOne"/>
+                    <include name="uploadFileTwo"/>
+                    <include name="uploadFileThree"/>
+                    <include name="uploadFileFour"/>
+                </methods>
+            </class>
+
+            <class name="regression.uitest.TestScenarioFiveRunner">
+                <methods>
+                    <include name="sendEmail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

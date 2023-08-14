@@ -1,0 +1,18 @@
+{
+  "field_label": "Account Region",
+  "field_length": "255",
+  "account_name": "CyanGate",
+  "account_region": "EMEA",
+  "contact_first_name": "Brad",
+  "contact_last_name": "Scott",
+  "contact_full_name": "Brad Scott",
+  "language": "English",
+  "account_owner_section": "Account Owner",
+  "first_account_owner": "Nurane Kutbilge",
+  "new_account_owner": "Integration User",
+  "file_uploaded_successfully_message": "1 of 1 file uploaded",
+  "email_address": "gulmihre.sdet@gmail.com",
+  "email_subject": "Test Email",
+  "email_body": "Test Body",
+  "email_successful_message": "Email was sent"
+}
